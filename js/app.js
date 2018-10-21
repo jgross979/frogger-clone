@@ -1,3 +1,4 @@
+'use strict';
 //********ENEMY CLASS********//
 const Enemy = function(x, y) {
     this.x = x;
@@ -34,7 +35,7 @@ function reEnter(object){
 }
 //Collision detector with player
 function detectCollision(object){
-  if(Math.abs(object.x - player.x) <= 20 && Math.abs(object.y - player.y) <=50 && player.y <270){
+  if(Math.abs(object.x - player.x) <= 40 && Math.abs(object.y - player.y) <=50 && player.y <270){
     console.log('hit')
     player.x = 200;
     player.y = 370;
@@ -181,7 +182,14 @@ let player = new Player();
 //Instantiate gem
 let gem = new Gem();
 
+let reset = document.querySelector('.reset');
 
+reset.addEventListener('click', function(){
+  player.lives = 3;
+  player.points = 0;
+  player.x = 200;
+  player.y = 370;
+})
 
 // This listens for key presses and sends the keys to
 // Player.handleInput() method.
