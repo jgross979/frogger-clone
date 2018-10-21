@@ -13,12 +13,12 @@
 - javaScript logic prevents player from going off screen, and cycles enemies constantly across the screen in random lanes.
 
 
-##Directions
+## Directions
 - Use the arrow keys to move the player towards the water.
 - A collision with the player and a bug will send the player back to the beginning
 - If the player reaches the water, they win!
 
-##Features to be added
+## Features to be added
 - Character Selection
 - Difficulty Levels
 - Display points
