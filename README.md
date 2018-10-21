@@ -18,11 +18,6 @@
 - A collision with the player and a bug will send the player back to the beginning
 - If the player reaches the water, they win!
 
-## How to Install Locally
-- Use git clone https://github.com/jgross979/frogger-clone.git in your console
-- To play, open the index.html file in your browser
-- Any editing of the logic should be done in the app.js file
-
 ## Features to be added
 - Character Selection
 - Difficulty Levels
