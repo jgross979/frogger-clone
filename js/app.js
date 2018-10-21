@@ -102,9 +102,16 @@ function winCondition(player){
       player.x = 200;
       player.y = 370;
       player.points += 100;
-      console.log('WINNER');
-      console.log(player.points);
+      displayMessage();
   }
+}
+
+function displayMessage(){
+  let message = document.querySelector('h1');
+  message.classList.toggle('hidden');
+  window.setTimeout(function(){
+    message.classList.toggle('hidden');
+  }, 3000)
 }
 
 //Stops player from going out of bounds.
